@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Task2</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $("p").click(function(){
+    $("p").fadeToggle();
+    $("div").fadeToggle("slow");
+  });
+});
+    </script>
+    <style>
+        div {
+            border: 2px,solid;
+            background-color:darkslateblue;
+            padding: 50px 30px 50px 90px;
+        }
+    </style>
+</head>
+<body>
+    <h1>using indiviual padding properties</h1>
+    <div>
+        <p> the div element has top padding of 50px,a right padding of 30px,a bottom padding of50px and left padding of 90px.</p>
+    </div>
+
+</body>
+</html>

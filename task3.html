@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Task2</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".div1").click(function () {
+                $(this).fadeOut();
+                $(this).fadeOut("slow");
+                $(this).fadeOut(3000);
+            });
+		});
+         $(document).ready(function () {
+            $(".div2").click(function () {
+                $(".div1").fadeIn();
+                $(this).fadeIn("slow");
+                $(this).fadeIn(3000);
+            });
+		 });
+        $(document).ready(function () {
+            $(".div").click(function () {
+                $(this).fadeOut();
+                $(this).fadeOut("slow");
+                $(this).fadeOut(3000);
+            });
+		});
+        $(document).ready(function () {
+            $("#div3").click(function () {
+                $(".div").fadeIn();
+                $(this).fadeIn("slow");
+                $(this).fadeIn(3000);
+            });
+		 });
+    </script>
+</head>
+<body>
+    <div class="div1" style="background-color:cadetblue;padding:50px;"></div>
+    <div class="div2" style="background-color:crimson;padding:8px;"></div>
+    <div style="height:500px;">
+        <div class="div" style="float:left;width:20%;background-color:blue;height:100%;"></div>
+        <div class="div" style="float:left;width:60%;background-color:darkviolet;height:100%;"></div>
+        <div class="div" style="float:left;width:20%;background-color:teal;height:100%;"></div>
+    </div>
+    <div id="div3" style="background-color:lightcoral;padding:25px;"></div>
+    <div style="background-color:chocolate;padding:8px;"></div>
+</body>
+</html>
